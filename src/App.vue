@@ -1,32 +1,37 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="skip">
+      <router-link to="/timeClock" class="router">仿真时钟</router-link> |
+      <router-link to="/sihuo" class="router">逆天私活（粗糙见谅）</router-link>
     </nav>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.skip{
+  width: 100%;
+  height: 30px;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(40, 174, 99);
+  padding-top: 55px;
+  font-size: 20px;
+  line-height: 20px;
+
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.router {
+  color: rgb(86, 236, 151);
+  font-size: 20px;
+  line-height: 20px;
 }
+
+#app{
+    width: 100%;
+    height: 780px;
+    background-color:rgb(61, 62, 62);
+}
+
+
+
 </style>
