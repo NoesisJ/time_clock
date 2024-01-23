@@ -142,7 +142,8 @@ export default (await import('vue')).defineComponent({
 
     },
     mounted() {
-        this.timer = setInterval(this.current_date, 75)
+        
+        
     },
 })
 </script>

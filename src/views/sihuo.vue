@@ -51,6 +51,6 @@ p{
     text-align: center;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 110vh;
 }
 </style>
