@@ -142,8 +142,7 @@ export default (await import('vue')).defineComponent({
 
     },
     mounted() {
-        
-        
+        this.timer = setInterval(this.current_date, 35)
     },
 })
 </script>
@@ -172,6 +171,7 @@ export default (await import('vue')).defineComponent({
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 999;
 }
 
 .anchor-hour{
